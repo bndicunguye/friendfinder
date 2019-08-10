@@ -8,16 +8,30 @@
     <title>Friend Finder</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="Stylesheet" href="css/Style.css">
+      <link rel="stylesheet" href="css/style.css"/>   
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<style>
+        #submit{
+   margin-bottom:20px; 
+   margin-top: 20px; 
+   padding-top: 10px;
+}
+body{
+    background-color:beige;
+    padding-left: 80px;
+    margin-top: 40px; 
+}
+    </style>
+
 </head>
 
 
 <body>
-    <h1>Test</h1>
+
     <div class="questions">
         <h4>Survey Questions</h4>
         <h4>About You</h4>
@@ -33,8 +47,8 @@
         </div>
 
 
-        <h5>Question1</h5>
-        <h6>you like basketball?</h6>
+        <h5 id="Question1">Question1</h5>
+        <h6>BMW is better than Aoudi</h6>
         <select id="q0">
             <option value=0>select opnion</option>
             <option value=1>1(strongly desagree)</option>
@@ -44,7 +58,7 @@
             <option value=5>5(strongly agree)</option>
         </select>
         <h5>Question2</h5>
-        <h6> you live in charlotte?</h6>
+        <h6>Charlotte is one of the top 3 financial city</h6>
         <select id="q1">
             <option value=0>select opnion</option>
             <option value=1>1(strongly desagree)</option>
@@ -54,7 +68,7 @@
             <option value=5>5(strongly agree)</option>
         </select>
         <h5>Question3</h5>
-        <h6>you are female?</h6>
+        <h6>all male like to watch NFL and NBA</h6>
         <select id="q2">
             <option value=0>select opnion</option>
             <option value=1>1(strongly desagree)</option>
@@ -64,7 +78,7 @@
             <option value=5>5(strongly agree)</option>
         </select>
         <h5>Question4</h5>
-        <h6>you are male?</h6>
+        <h6>you can eat unhealthy food and lose weight</h6>
         <select id="q3">
             <option value=0>select opnion</option>
             <option value=1>1(strongly desagree)</option>
@@ -74,7 +88,7 @@
             <option value=5>5(strongly agree)</option>
         </select>
         <h5>Question5</h5>
-        <h6>you set goals?</h6>
+        <h6>when you set goals, you can not be lazy</h6>
         <select id="q4">
             <option value=0>select opnion</option>
             <option value=1>1(strongly desagree)</option>
@@ -84,7 +98,7 @@
             <option value=5>5(strongly agree)</option>
         </select>
         <h5>Question6</h5>
-        <h6>you like dogs?</h6>
+        <h6>girls like pet more than boys</h6>
         <select id="q5">
             <option value=0>select opnion</option>
             <option value=1>1(strongly desagree)</option>
@@ -94,7 +108,7 @@
             <option value=5>5(strongly agree)</option>
         </select>
         <h5>Question7</h5>
-        <h6>you drink alcohol?</h6>
+        <h6>drink and drive is no always a bad idea</h6>
         <select id="q6">
             <option value=0>select opnion</option>
             <option value=1>1(strongly desagree)</option>
@@ -104,7 +118,7 @@
             <option value=5>5(strongly agree)</option>
         </select>
         <h5>Question8</h5>
-        <h6>you are married?</h6>
+        <h6>Married couple argue almost everyday</h6>
         <select id="q7">
             <option value=0>select opnion</option>
             <option value=1>1(strongly desagree)</option>
@@ -114,7 +128,7 @@
             <option value=5>5(strongly agree)</option>
         </select>
         <h5>Question9</h5>
-        <h6>you workout every day?</h6>
+        <h6>you workout every day and keep same weight</h6>
         <select id="q8">
             <option value=0>select opnion</option>
             <option value=1>1(strongly desagree)</option>
@@ -124,7 +138,7 @@
             <option value=5>5(strongly agree)</option>
         </select>
         <h5>Question10</h5>
-        <h6>you like music?</h6>
+        <h6>music is more than movie</h6>
         <select id="q9">
             <option value=0>select opnion</option>
             <option value=1>1(strongly desagree)</option>
@@ -137,7 +151,8 @@
 
         <br>
 
-        <button id="submit">submit</button>
+      
+         <button id="submit">submit</button> 
 
     </div>
 
